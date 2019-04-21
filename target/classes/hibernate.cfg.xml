@@ -7,12 +7,13 @@
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost/scoala</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">Anca$ilvia87</property>
+        <property name="hibernate.connection.password">password12345678</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="sql.entity.Clasa"/>
         <mapping class="sql.entity.Elevi"/>
         <mapping class="sql.entity.Materie"/>
         <mapping class="sql.entity.Profesor"/>
         <mapping class="sql.entity.Note"/>
+        <mapping class="sql.entity.Medii"/>
     </session-factory>
 </hibernate-configuration>

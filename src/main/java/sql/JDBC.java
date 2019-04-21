@@ -11,7 +11,7 @@ public class JDBC {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/scoala";
         String user = "root";
-        String pass = "12345678";
+        String pass = "password12345678";
 
         try (Connection conn = DriverManager.getConnection(url, user, pass);
 

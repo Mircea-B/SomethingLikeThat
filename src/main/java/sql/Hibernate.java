@@ -12,7 +12,8 @@ public class Hibernate {
 
         ElevService elevService = new ElevService();
 
-        Elevi elev = elevService.findElevByName("Catalina");
+        Elevi elev = elevService.findElevByName("Cristi");
         System.out.println(elev);
+
     }
 }
