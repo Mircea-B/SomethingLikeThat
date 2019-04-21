@@ -1,0 +1,67 @@
+foarte important entiatea care detine relatia
+cel care detine foreign keys e ownerul - invers decat in realitate -s
+
+
+delete restore proiect azi,
+
+serviciu
+singleton de conexiune
+http://localhost/elevi
+
+elevService
+elevService(){
+clasaservice clasaservice;
+}
+
+    - showAllElevi
+    - insertElev(Elev elev)
+    - findelevById()
+    - delete
+    - createelevIntoClasa(int id, numeelev)
+
+
+Clasa service
+
+    - find clasaBy~Id()
+
+
+MVC - Model view controler ,
+modelul (entitate din java) ce vrem sa il prezentam si cum controlam informatia (controlerul este responsabil de legarea modelului de view)
+este unul dintre cele mai folosite patern-uri folosite in aplicatii web
+un serviciu poate folosi alt serviciu.
+serviciu = un grup de metode specializate pentru lucrurl cu o entitate, pentru un anumit model
+microservicii = o arhitectura de sistem
+
+cand nu modificam informatii nu avem nevoie de o tranzactie
+
+
+stratatu:
+- prezentare
+- servicii
+- persistenta
+
+
+
+aspect orientated programming
+
+vali dobrogeanu
+
+ce probleme ar putea sa apra la un interviu pentru internship pe java?:
+- intrebari de logica (se gasesc usor pe google)
+- sa sti cum sa cauti o informatie
+- ce sti, ce-ai facut acasa, de unde ai invatat, ce ai scris ca si cod?
+-ce inseamna o clasa, cum instantiem o clasa, ce algoritmi sti, de sortare, care, eventual niste comparari
+- poti sa interezi printr-o colectie cu un for, for ehanced,
+- design patterns (cu cat sti mai multe cu atat mai bine)
+- sa fi pregatit cu o serie de topicuri
+- pentru ceea ce nu stiu, dar pot sa aflu ulterior si indiferent de raspuns sa transmit ce am aflat
+- gandeste-te la aplicatiile pe care le-am facut si poti spune cate ceva despre implementare
+-
+-
+
+
+
+
+
+
+

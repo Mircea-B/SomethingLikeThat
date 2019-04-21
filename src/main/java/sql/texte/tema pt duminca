@@ -1,0 +1,6 @@
+- serviciul pentru materie si profesor
+- serviciul pt note
+- querriuri avansate find profi by materie nume;
+- este posibil ca un profesor sa aiba mai multe materii -> transform prof-materie relationship to many to many
+(sa cream inca un tabel nou , un join table, sa modificam un pic foreign keys)
+
