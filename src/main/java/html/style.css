@@ -1,0 +1,39 @@
+
+p {
+font-size: 25px;
+
+}
+
+#butonel {
+color : red
+}
+
+.main_dashhboard {
+   
+    width: 85%;
+}
+td,th{
+    border: 1px solid rgba(243, 14, 14, 0.726);
+    align-content: center;
+}
+h1{
+    text-align: center;
+
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.naviagation_class{
+    background-color: darkgoldenrod;
+
+}
+
+.content_class{
+
+}
+a {
+  color:aquamarine;
+  text-decoration: none;
+ }
