@@ -4,7 +4,7 @@
 body {
 margin: 0;
 padding: 0;
-background: white;
+background: url(resources/cube.jpg);
 }
 .box{
 width: 400px;
@@ -16,6 +16,7 @@ transform:  translate(-50%,-50%);
 background: #191919;
 text-align: center;
 border-radius: 24px;
+animation: animate 2s linear infinite;
 }
 .box input[type="text"],.box input[type="password"]{
     border: 0;
@@ -118,3 +119,18 @@ a {
   color:#a01a04;
   text-decoration: none;
  }
+
+ @keyframes animate{
+    0% {
+        box-shadow: 0 0 0 0 rgba(29, 171,209,0.6), 0 0 0 0 rgba(29, 171,209,0.6);
+    }
+    30% {
+        box-shadow: 0 0 0 50px rgba(29, 171,209,0), 0 0 0 0 rgba(29, 171,209,0.6);
+    }
+    65% {
+        box-shadow: 0 0 0 50px rgba(29, 171,209,0), 0 0 0 30px rgba(29, 171,209,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 171,209,0), 0 0 0 30px rgba(29, 171,209,0);
+    }
+}
