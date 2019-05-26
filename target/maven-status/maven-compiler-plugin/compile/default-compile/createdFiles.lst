@@ -1,0 +1,13 @@
+sql\entity\Profesori.class
+sql\entity\Medii.class
+sql\JDBC.class
+sql\entity\Clasa.class
+sql\Hibernate.class
+sql\service\ElevService.class
+sql\entity\Elevi.class
+sql\SessionFactorySingleton.class
+sql\service\MedieService.class
+sql\entity\Note.class
+sql\service\ClasaService.class
+sql\entity\Materie.class
+sql\controlers\my_first_servlet.class

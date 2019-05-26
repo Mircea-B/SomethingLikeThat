@@ -11,4 +11,39 @@ tabel.click(function () {
 
 $(document).ready(function(){
     var meniu_lateral=$("#sideMenu")
+    function validate() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username == "mircea" && password == "parola") {
+            alert("Felicitari, esti logat");
+            window.location = "index.html";} // cica acesta este codul de redirect
+        else {
+                alert("mai incearca odata :)");
+                window.location = "login.html";
+            }
+        }
+        return false;
+    }
+
+
+
+
+
 })
+
+function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if(username == "mircea" && password == "parola"){
+        alert("Felicitari, esti logat");
+        window.location="index.html"; // cica acesta este codul de redirect
+        else {
+alert("mai incearca odata :)");
+window.location="login.html";
+    }     
+}
+    return false;
+}
+

@@ -8,22 +8,22 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class SessionFactorySingleton {
 
-    private SessionFactorySingleton() {
-    }
+  private static SessionFactory INSTANCE = null;
 
-    private static SessionFactory INSTANCE = null;
+  private SessionFactorySingleton() {
+  }
 
-    public static SessionFactory getInstance() {
-        if (INSTANCE == null) {
-            // Create registry
-            StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+  public static SessionFactory getInstance() {
+    if (INSTANCE == null) {
+      // Create registry
+      StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
 // Create MetadataSources
-            MetadataSources sources = new MetadataSources(registry);
+      MetadataSources sources = new MetadataSources(registry);
 // Create Metadata
-            Metadata metadata = sources.getMetadataBuilder().build();
+      Metadata metadata = sources.getMetadataBuilder().build();
 // Create SessionFactory
-            INSTANCE = metadata.getSessionFactoryBuilder().build();
-        }
-        return INSTANCE;
+      INSTANCE = metadata.getSessionFactoryBuilder().build();
     }
+    return INSTANCE;
+  }
 }

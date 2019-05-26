@@ -1,0 +1,32 @@
+/* class*/
+.header-color {
+    background: grey;
+}
+
+.navigation-color {
+    background: aliceblue;
+}
+
+.content-color {
+    background: aqua;
+}
+
+.footer-color {
+    background: bisque;
+}
+
+/* id */
+#main-table {
+    border: 1px solid black;
+    width: 85%;
+}
+
+span.hvr:hover{
+
+    color: red;
+    cursor: pointer;
+
+}
+
+
+

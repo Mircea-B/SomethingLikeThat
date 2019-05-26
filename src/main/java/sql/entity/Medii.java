@@ -1,27 +1,20 @@
 package sql.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
-
 import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "medii")
 public class Medii {
 
   @Id
-  @Column(name = "idMedie",unique = true,nullable = false)
-  @GeneratedValue(strategy= GenerationType.AUTO,generator="native")
-  @GenericGenerator(name = "native",strategy = "native")
+  @Column(name = "idMedie", unique = true, nullable = false)
+  @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+  @GenericGenerator(name = "native", strategy = "native")
   Integer idMedie;
 
-  @Column(name="valoareMedie")
+  @Column(name = "valoareMedie")
   Integer valoareMedie;
 
   @OneToOne

@@ -18,13 +18,11 @@ public class Note {
           generator = "native"
   )
   @GenericGenerator(
-          name="native",
-          strategy="native"
+          name = "native",
+          strategy = "native"
   )
   Integer idNote;
   String valoareNota;
-
-
 
 
 }

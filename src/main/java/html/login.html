@@ -3,19 +3,19 @@
 <head>
     <script src="javascript/jquery-3.4.1.min.js"></script>
     <script src="javascript/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <title>Login</title>
 </head>
 <body>
-    <h1>Welcome traveler, please login</h1>
+<h1>Welcome traveler, please login</h1>
 
-<form class="box" action="index.html" method="POST">
-     <h2>Login</h2>
-    <input type="text" name="" placeholder="Username">
-    <input type="password" name="" placeholder="Password">
- <input type="submit" name="" value="Login">
-</form> 
+<form action="index.html" class="box" method="POST">
+    <h2>Login</h2>
+    <input name="" placeholder="Username" type="text">
+    <input name="" placeholder="Password" type="password">
+    <input name="" onclick="validate()" type="submit" value="Login"/>
+</form>
 
 
 </body>

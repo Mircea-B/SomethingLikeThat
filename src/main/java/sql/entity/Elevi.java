@@ -1,59 +1,49 @@
 package sql.entity;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-
 import org.hibernate.annotations.GenericGenerator;
 
-import sql.entity.Clasa;
+import javax.persistence.*;
 
 @Entity
-@Table(name="elevi")
+@Table(name = "elevi")
 public class Elevi {
 
-    @Id
-    @Column(name = "idElev",
-            unique = true,
-            nullable = false)
-    @GeneratedValue(
-            strategy= GenerationType.AUTO,
-            generator="native"
-    )
-    @GenericGenerator(
-            name = "native",
-            strategy = "native"
-    )
-    Integer idElev;
+  @Id
+  @Column(name = "idElev",
+          unique = true,
+          nullable = false)
+  @GeneratedValue(
+          strategy = GenerationType.AUTO,
+          generator = "native"
+  )
+  @GenericGenerator(
+          name = "native",
+          strategy = "native"
+  )
+  Integer idElev;
 
-    String numeElev;
+  String numeElev;
 
-    @ManyToOne
-    @JoinColumn(name = "idClasa")
-    Clasa clasa;
+  @ManyToOne
+  @JoinColumn(name = "idClasa")
+  Clasa clasa;
 
-    public Elevi(String numeElev, Clasa clasa) {
-        this.numeElev = numeElev;
-        this.clasa = clasa;
-    }
+  public Elevi(String numeElev, Clasa clasa) {
+    this.numeElev = numeElev;
+    this.clasa = clasa;
+  }
 
-    public Elevi() {
-    }
+  public Elevi() {
+  }
 
-    @Override
-    public String toString() {
+  @Override
+  public String toString() {
 
-        return "Elevi{" +
-                "idElev=" + idElev +
-                ", numeElev='" + numeElev + '\'' +
-                ", clasa=" + clasa +
-                '}';
-    }
+    return "Elevi{" +
+            "idElev=" + idElev +
+            ", numeElev='" + numeElev + '\'' +
+            ", clasa=" + clasa +
+            '}';
+  }
 }
